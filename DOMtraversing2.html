@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demos">This is para to be removed </p>
+    
+</body>
+<script>
+    const element=document.createElement("div")
+    console.log(element)
+
+    element.className="demo"
+    element.id="exp"
+    element.style.backgroundColor="yellow"
+    element.style.padding="12px"
+    const addText=element.append("hello world!.....")
+    document.body.append(element)
+    //paragraph
+    const par=document.createElement("p")
+    console.log(par)
+    par.className="p1"
+    par.id="p1"
+    par.style.fontSize="12px"
+    par.style.color="red"
+    par.style.backgroundColor="black"
+    const para1=par.append("this is paragraph")
+    document.element.append(par)
+
+    //remove the element
+    const remove_para=document.getElementById("demos")
+    remove_para.remove()
+
+//creating list tags
+    const ul=document.createElement('ul')
+    const items=['list1','list2','list3']
+    items.forEach(text=>{
+        const li=document.createElement('li')
+        li.textContent=text
+        ul.appendChild(li)
+    })
+    document.body.appendChild(ul)
+</script>
+</html>

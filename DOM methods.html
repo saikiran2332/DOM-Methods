@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heading{
+        color:chartreuse;
+        font-size: 23px;
+    }
+</style>
+<body>
+    <!-- <h3>Dom methods</h3>
+    <p id="demo">Hello world</p>
+    <p id="demo1">testing paragraph</p>
+    <button onclick="Changetext()">Click Me</button>
+    <div id="myDiv">Color change</div>
+    <button onclick="changeColor()">Click me</button>
+    <br>
+    <br>
+    <img id="Myimg" src="https://imgd.aeplcdn.com/1200x900/n/cw/ec/40087/thar-exterior-right-front-three-quarter-35.jpeg?isig=0&q=80">
+    <button onclick="changeImage()">change image</button>
+    
+    <div id="example2">
+        <p>this is my paragraph tag</p>
+        <p style="display :none">This is my another paragraph tag</p>
+    </div> -->
+    <!-- <div class="mydiv1" style="width:100px; height : 100px;background-color:red"></div>
+    <div class="mydiv1" style="width:100px; height : 100px;background-color:rgb(17, 16, 16)"></div>
+    <div class="mydiv1" style="width:100px; height : 100px;background-color:rgb(55, 220, 18)"></div>
+    <button onclick="changediv()">change color</button>
+
+    <ul class="list">
+        <li class="child">tea</li>
+        <li class="child">milk</li>
+    </ul> -->
+
+    <!-- tagname -->
+    <p>para1</p>
+    <p>para2</p>
+    <h1>heading1</h1>
+    <h3 class="heading">heading3</h3>
+    <h3 class="heading">heading3</h3>
+    <h3 class="heading">heading3</h3>
+    
+
+    
+</body>
+<script>
+    // const element=document.getElementById("demo")
+    // element.innerHTML="Good morning"
+
+     document.getElementById("demo").innerHTML="Good Morning"
+
+    function Changetext(){
+        document.getElementById("demo1").innerHTML="Good Morning"
+    }
+    function changeColor(){
+        const element=document.getElementById("myDiv")
+        element.style.fontSize="36px"
+        element.style.backgroundColor="orangered"
+        element.style.color="black"
+
+    }
+    //with attribute
+    function changeImage(){
+        const element=document.getElementById("Myimg")
+        
+    const element=document.getElementById("example2")
+    console.log('innerHtml:',element.innerHTML)
+    console.log("innerText:",element.innerText)
+    console.log("textcontent:",element.textContent)
+    function changediv(){
+        const elements=document.getElementsByClassName("mydiv1")
+        for(const ele of elements){
+            ele.style.backgroundColor="blue";
+        }
+    }
+    // const elements1=document.getElementsByClassName("list")[0]
+    // elements1.getElementsByClassName("child")[1].innerHTML="coffee"
+
+    //tagname
+    const eles=document.getElementsByTagName("p")
+    // for(let i=0;i<eles.length;i++){
+    //     eles[i].innerHTML="change para"
+    // }
+    for(const ele of eles){
+        ele.innerHTML="change para"
+    }
+
+    const headings=document.getElementsByTagName('h3')
+    for(const heading of headings){
+        heading.classList.add("heading")
+    }
+</script>
+</html>

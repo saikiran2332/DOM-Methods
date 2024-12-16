@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //creating list tags
+    const ul=document.createElement('ul')
+    const items=['list1','list2','list3']
+    items.forEach(text=>{
+        const li=document.createElement('li')
+        li.textContent=text
+        ul.appendChild(li)
+    })
+    document.body.appendChild(ul)
+</script>
+</html>
